@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://cb35f7ynbeduc"]
+
+[ext_resource type="Texture2D" uid="uid://bhyyh2s0kgq5s" path="res://entities/items/book/sprites/book.png" id="1_wh5p4"]
+[ext_resource type="Script" uid="uid://dvy7wlq5dsn2" path="res://entities/items/book/book.gd" id="2_f4ycg"]
+
+[node name="Book" type="TextureRect" node_paths=PackedStringArray("text_blocks")]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_wh5p4")
+script = ExtResource("2_f4ycg")
+text_blocks = [NodePath("Article"), NodePath("Article2")]
+
+[node name="Article" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 124.0
+offset_right = 262.0
+offset_bottom = 325.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.13333334, 0.1254902, 0.20392157, 1)
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+
+[node name="Article2" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 122.0
+offset_right = 442.0
+offset_bottom = 326.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.13333334, 0.1254902, 0.20392157, 1)
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
