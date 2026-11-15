@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0oetqyi5cp0p"]
+
+[ext_resource type="Texture2D" uid="uid://d2kr4td5pgqsq" path="res://entities/items/censorship_shelf/sprites/shelves_bulliten.png" id="1_83f3j"]
+[ext_resource type="Script" uid="uid://ckigc80msf6en" path="res://entities/items/censorship_shelf/censor_rack.gd" id="2_5moow"]
+
+[node name="CensorRack" type="TextureRect"]
+offset_right = 213.0
+offset_bottom = 643.0
+mouse_filter = 2
+texture = ExtResource("1_83f3j")
+script = ExtResource("2_5moow")
+
+[node name="BulletinShelf" type="TextureButton" parent="."]
+layout_mode = 0
+anchor_left = 0.25821596
+anchor_top = 0.7682737
+anchor_right = 0.9530516
+anchor_bottom = 0.9828927
+metadata/_edit_use_anchors_ = true
+
+[node name="DecreeShelf" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2535211
+anchor_top = 0.5427683
+anchor_right = 0.9483568
+anchor_bottom = 0.7573872
+metadata/_edit_use_anchors_ = true
+
+[node name="NewspaperShelf" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2488263
+anchor_top = 0.30326593
+anchor_right = 0.943662
+anchor_bottom = 0.5241057
+metadata/_edit_use_anchors_ = true
+
+[node name="BookShelf" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.24413146
+anchor_top = 0.065318815
+anchor_right = 0.9389671
+anchor_bottom = 0.27993783
+metadata/_edit_use_anchors_ = true
