@@ -8,14 +8,29 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_wh5p4")
 script = ExtResource("2_f4ycg")
-text_blocks = [NodePath("Article"), NodePath("Article2")]
+text_blocks = [NodePath("Title"), NodePath("Article"), NodePath("Article2")]
+block_char_limits = Array[int]([15, 120, 160])
+
+[node name="Title" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 121.0
+offset_right = 262.0
+offset_bottom = 147.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.13333334, 0.1254902, 0.20392157, 1)
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Article" type="RichTextLabel" parent="."]
 layout_mode = 0
 offset_left = 111.0
-offset_top = 124.0
+offset_top = 151.0
 offset_right = 262.0
-offset_bottom = 325.0
+offset_bottom = 326.0
 mouse_filter = 2
 theme_override_colors/default_color = Color(0.13333334, 0.1254902, 0.20392157, 1)
 theme_override_font_sizes/normal_font_size = 14
