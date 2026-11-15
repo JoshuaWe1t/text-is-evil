@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl80hjighgm4y"]
+
+[ext_resource type="Texture2D" uid="uid://dd14lf4uxqimh" path="res://entities/items/newspaper/sprites/newspaper.png" id="1_wpsf2"]
+[ext_resource type="Script" uid="uid://d4h3rjl0ow3y8" path="res://entities/items/newspaper/newspaper.gd" id="2_uwamy"]
+
+[node name="Newspaper" type="TextureRect" node_paths=PackedStringArray("text_blocks")]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_wpsf2")
+script = ExtResource("2_uwamy")
+text_blocks = [NodePath("Title"), NodePath("Article"), NodePath("Article2")]
+
+[node name="Title" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 104.0
+offset_right = 446.0
+offset_bottom = 131.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.13333334, 0.1254902, 0.20392157, 1)
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Article" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 138.0
+offset_right = 272.0
+offset_bottom = 343.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.13333334, 0.1254902, 0.20392157, 1)
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+
+[node name="Article2" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 221.0
+offset_right = 449.0
+offset_bottom = 348.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.13333334, 0.1254902, 0.20392157, 1)
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
