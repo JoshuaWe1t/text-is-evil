@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0ekw205nrnn2"]
+
+[ext_resource type="Texture2D" uid="uid://c7gpak3hypesy" path="res://entities/items/bulletin/sprites/bulletin.png" id="1_fc2xg"]
+[ext_resource type="Script" uid="uid://brbwi8k1bkfwh" path="res://entities/items/bulletin/bulletin.gd" id="2_uflw4"]
+
+[node name="Bulletin" type="TextureRect" node_paths=PackedStringArray("text_blocks")]
+offset_right = 550.0
+offset_bottom = 450.0
+texture = ExtResource("1_fc2xg")
+script = ExtResource("2_uflw4")
+text_blocks = [NodePath("Article"), NodePath("Article2"), NodePath("Article3")]
+
+[node name="Article" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 107.0
+offset_right = 196.0
+offset_bottom = 329.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.13333334, 0.1254902, 0.20392157, 1)
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+
+[node name="Article2" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 73.0
+offset_right = 334.0
+offset_bottom = 307.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.13333334, 0.1254902, 0.20392157, 1)
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+
+[node name="Article3" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 355.0
+offset_top = 132.0
+offset_right = 472.0
+offset_bottom = 358.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.13333334, 0.1254902, 0.20392157, 1)
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
