@@ -1,11 +1,16 @@
 extends Node
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+@warning_ignore("unused_signal")
+signal reputation_changed(new_value)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+@warning_ignore("unused_signal")
+signal item_requested(item_id: String)
+
+
+@warning_ignore("unused_signal")
+signal opened_for_editing(item_id: String, node: Node)
+
+
+@warning_ignore("unused_signal")
+signal request_open_editor(item_id)
