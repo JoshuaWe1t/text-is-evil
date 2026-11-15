@@ -1,7 +1,5 @@
 extends Node
 
-signal reputation_changed(new_value)
-
 # --- Данные игрока ---
 var reputation: int = 0
 var upgrades_levels: Dictionary = {}
@@ -76,7 +74,8 @@ func load_csv_data(file_path: String) -> Dictionary:
 
 func add_reputation(amount: int) -> void:
 	reputation += amount
-	reputation_changed.emit(reputation)
+	print(reputation)
+	EventBus.reputation_changed.emit(reputation)
 
 
 func get_upgrade_cost(upgrade_id: String) -> int:
