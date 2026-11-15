@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c3j5q5p4mi3le"
+
+[deps]
+
+files=["res://core/data/upgrades.display.translation", "res://core/data/upgrades.category.translation", "res://core/data/upgrades.base.translation", "res://core/data/upgrades.cost.translation", "res://core/data/upgrades.max.translation", "res://core/data/upgrades.effect.translation", "res://core/data/upgrades.target.translation", "res://core/data/upgrades.effect.translation", "res://core/data/upgrades.tick.translation", "res://core/data/upgrades.req.translation", "res://core/data/upgrades.description.translation"]
+
+source_file="res://core/data/upgrades.csv"
+dest_files=["res://core/data/upgrades.display.translation", "res://core/data/upgrades.category.translation", "res://core/data/upgrades.base.translation", "res://core/data/upgrades.cost.translation", "res://core/data/upgrades.max.translation", "res://core/data/upgrades.effect.translation", "res://core/data/upgrades.target.translation", "res://core/data/upgrades.effect.translation", "res://core/data/upgrades.tick.translation", "res://core/data/upgrades.req.translation", "res://core/data/upgrades.description.translation"]
+
+[params]
+
+compress=true
+delimiter=0

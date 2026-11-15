@@ -1,0 +1,15 @@
+id,display_name,category,base_cost,cost_mult,max_level,effect_type,target_id,effect_value,tick_rate_sec,req_expression,description
+click_area,Размер стерки,click,10,1.15,25,add_stat,chars_per_click,1.0,0,true,Увеличивает количество стираемых символов за один клик (ЛКМ)
+char_weight,Вес символа,click,15,1.15,9999,add_click,reputation,1.0,0,true,Дает +1 очко репутации за каждый стертый символ
+trash_basket,Мусорное ведро,tool,3,1.0,1,unlock_feature,trash_basket_node,0.0,0,reputation >= 3,Позволяет удалять ненужные документы безвозвратно
+shredder,Шредер,tool,50,1.0,1,unlock_feature,shredder_node,5.0,20,reputation >= 50,"Уничтожает документы, давая 5 очков репутации за каждое использование"
+shredder_speed,Мотор шредера,upgrade,100,1.25,5,reduce_stat,shredder_tick_rate,1.0,0,shredder_unlocked,Уменьшает время переработки документа в шредере на 1 секунду
+shredder_yield,Качество резки,multiplier,150,1.2,10,add_multiplier,shredder_income,0.1,0,shredder_unlocked,Увеличивает количество репутации от шредера на 10% (0.1)
+typewriter,Печатная машинка,passive,250,1.15,9999,add_passive,reputation,5.0,3,reputation >= 250,Автоматически генерирует 1 очко репутации каждые 15 секунд
+typewriter_speed,Смазка механизмов,upgrade,300,1.25,5,reduce_stat,typewriter_tick_rate,2.0,0,typewriter_unlocked,Уменьшает цикл печатной машинки на 2 секунды
+typewriter_yield,Хорошие чернила,multiplier,350,1.15,10,add_multiplier,typewriter_income,0.05,0,typewriter_unlocked,Увеличивает базовый доход печатной машинки на 5% (0.05)
+printing_press,Типографский пресс,passive,1500,1.15,9999,add_passive,reputation,5.0,20,reputation >= 1000,"Мощный станок, дает сразу 5 очков, но цикл занимает 20 секунд"
+censor_tray,Лоток цензора,tool,400,1.0,1,unlock_feature,censor_tray_node,0.0,0,(typewriter_unlocked or pencil_unlocked) and reputation >= 400,Открывает лоток для складирования обработанных документов
+censor_tray_value,Объем лотка цензора,upgrade,150,1.15,10,add_stat,censor_tray_capacity,3.0,0,censor_tray_unlocked,Увеличивает максимальную вместимость лотка цензора на 3 документа
+censor_tray_bonus,Бонус обработки,multiplier,200,1.15,5,add_multiplier,censor_tray_income,0.02,0,censor_tray_unlocked,Увеличивает доход от лотка цензора на 2%
+pencil,Карандаш со стеркой,tool,200,1.0,1,unlock_feature,pencil_node,0.0,0,reputation >= 200,Позволяет переписывать символы (ПКМ)

@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cl8yuy3kc6nd3"
+
+[deps]
+
+files=["res://core/data/items.ID объекта.translation", "res://core/data/items.Мин. кол.translation", "res://core/data/items.Макс. кол.translation"]
+
+source_file="res://core/data/items.csv"
+dest_files=["res://core/data/items.ID объекта.translation", "res://core/data/items.Мин. кол.translation", "res://core/data/items.Макс. кол.translation"]
+
+[params]
+
+compress=true
+delimiter=0

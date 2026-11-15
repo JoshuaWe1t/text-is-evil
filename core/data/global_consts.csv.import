@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cl310r5xltmv3"
+
+[deps]
+
+files=["res://core/data/global_consts.Значение.translation", "res://core/data/global_consts.Описание (Как это работает).translation"]
+
+source_file="res://core/data/global_consts.csv"
+dest_files=["res://core/data/global_consts.Значение.translation", "res://core/data/global_consts.Описание (Как это работает).translation"]
+
+[params]
+
+compress=true
+delimiter=0
