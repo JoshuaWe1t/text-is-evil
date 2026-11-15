@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dewilom3lqg3y"]
+
+[ext_resource type="Script" uid="uid://dgkiuhv63il8t" path="res://entities/items/desk_item/desk_item.gd" id="1_dlfmo"]
+[ext_resource type="Texture2D" uid="uid://c7wd4b5wr1awi" path="res://entities/items/desk_item/bulletin1.png" id="1_fmnrt"]
+
+[node name="DeskItem" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 0
+texture = ExtResource("1_fmnrt")
+script = ExtResource("1_dlfmo")
