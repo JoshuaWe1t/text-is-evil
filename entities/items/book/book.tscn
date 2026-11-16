@@ -1,22 +1,24 @@
 [gd_scene load_steps=3 format=3 uid="uid://cb35f7ynbeduc"]
 
 [ext_resource type="Texture2D" uid="uid://bhyyh2s0kgq5s" path="res://entities/items/book/sprites/book.png" id="1_wh5p4"]
-[ext_resource type="Script" uid="uid://dvy7wlq5dsn2" path="res://entities/items/book/book.gd" id="2_f4ycg"]
+[ext_resource type="Script" uid="uid://c1yy0thghqxp2" path="res://core/utils/EditObject.gd" id="2_f4ycg"]
 
 [node name="Book" type="TextureRect" node_paths=PackedStringArray("text_blocks")]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 550.0
+offset_bottom = 450.0
 texture = ExtResource("1_wh5p4")
 script = ExtResource("2_f4ycg")
+item_id = "book"
 text_blocks = [NodePath("Title"), NodePath("Article"), NodePath("Article2")]
-block_char_limits = Array[int]([15, 120, 160])
+block_char_limits = Array[int]([15, 150, 180])
+metadata/_custom_type_script = "uid://c1yy0thghqxp2"
 
 [node name="Title" type="RichTextLabel" parent="."]
 layout_mode = 0
 offset_left = 111.0
 offset_top = 121.0
 offset_right = 262.0
-offset_bottom = 147.0
+offset_bottom = 152.0
 mouse_filter = 2
 theme_override_colors/default_color = Color(0.13333334, 0.1254902, 0.20392157, 1)
 theme_override_font_sizes/normal_font_size = 18
@@ -28,7 +30,7 @@ vertical_alignment = 1
 [node name="Article" type="RichTextLabel" parent="."]
 layout_mode = 0
 offset_left = 111.0
-offset_top = 151.0
+offset_top = 155.0
 offset_right = 262.0
 offset_bottom = 326.0
 mouse_filter = 2
