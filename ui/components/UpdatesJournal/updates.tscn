@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0qhdgm6f36kg"]
+
+[ext_resource type="Texture2D" uid="uid://4x3w8g4x60a7" path="res://ui/components/UpdatesJournal/journal.png" id="1_fecwl"]
+[ext_resource type="Script" uid="uid://usblh5orki6j" path="res://ui/components/UpdatesJournal/updates.gd" id="1_t31jx"]
+
+[node name="Updates" type="Control"]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+script = ExtResource("1_t31jx")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+
+[node name="JournalUpgrades" type="TextureButton" parent="MarginContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_fecwl")
