@@ -1,15 +1,17 @@
 [gd_scene load_steps=3 format=3 uid="uid://b0ekw205nrnn2"]
 
 [ext_resource type="Texture2D" uid="uid://c7gpak3hypesy" path="res://entities/items/bulletin/sprites/bulletin.png" id="1_fc2xg"]
-[ext_resource type="Script" uid="uid://brbwi8k1bkfwh" path="res://entities/items/bulletin/bulletin.gd" id="2_uflw4"]
+[ext_resource type="Script" uid="uid://c1yy0thghqxp2" path="res://core/utils/EditObject.gd" id="2_uflw4"]
 
 [node name="Bulletin" type="TextureRect" node_paths=PackedStringArray("text_blocks")]
 offset_right = 550.0
 offset_bottom = 450.0
 texture = ExtResource("1_fc2xg")
 script = ExtResource("2_uflw4")
+item_id = "bulletin"
 text_blocks = [NodePath("Title"), NodePath("Article2"), NodePath("Article3")]
 block_char_limits = Array[int]([25, 75, 75])
+metadata/_custom_type_script = "uid://c1yy0thghqxp2"
 
 [node name="Title" type="RichTextLabel" parent="."]
 layout_mode = 0
