@@ -10,6 +10,8 @@ signal item_requested(item_id: String)
 
 @warning_ignore("unused_signal")
 signal opened_for_editing(item_id: String, node: Node)
+@warning_ignore("unused_signal")
+signal closed_editing
 
 
 @warning_ignore("unused_signal")
