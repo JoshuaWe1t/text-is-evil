@@ -12,10 +12,10 @@ func setup(id: String) -> void:
 	match item_id:
 		"bulletin":
 			texture = load("res://entities/items/desk_item/bulletin1.png")
-		#"decree":
-			#texture = load("res://entities/items/decree/sprites/decree_sprite.png")
-		#"newspaper":
-			#texture = load("res://entities/items/newspaper/sprites/newspaper_sprite.png")
+		"decree":
+			texture = load("res://entities/items/desk_item/decree1.png")
+		"newspaper":
+			texture = load("res://entities/items/desk_item/newspaper2.png")
 		"book":
 			texture = load("res://entities/items/desk_item/book1.png")
 
